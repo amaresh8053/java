@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="triangle" class="io.mindtree.springcoreDemo.Triangle">
+                <!-- <property name="type" value="triangle"></property> -->
+                <!-- <constructor-arg  value="equlatral"></constructor-arg> -->
+                <property name="pointA" ref="zeroPoint"></property>
+                <property name="pointB" ref="onePoint"></property>
+                <property name="pointC" ref="twoPoint"></property>
+                
+        </bean>
+        
+        
+        <bean id="zeroPoint" class="io.mindtree.springcoreDemo.Point">
+        	<property name="x" value="0"></property>
+        	<property name="y" value="0"></property>
+        </bean>
+          <bean id="onePoint" class="io.mindtree.springcoreDemo.Point">
+        	<property name="x" value="1"></property>
+        	<property name="y" value="1"></property>
+        </bean>
+          <bean id="twoPoint" class="io.mindtree.springcoreDemo.Point">
+        	<property name="x" value="2"></property>
+        	<property name="y" value="2"></property>
+        </bean>
+
+		<bean>
+		
+		</bean>
+        
+
+</beans>
